@@ -3,6 +3,8 @@ module PokerHands
   class IllegalHandError < StandardError; end
 
   class Hand
+    include PokerHands::SearchUtilities
+
     attr_reader :cards
 
     def initialize(cards)

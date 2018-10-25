@@ -1,13 +1,11 @@
 module PokerHands
   class Deck
+    include PokerHands::SearchUtilities
+
     attr_reader :cards
 
     def initialize
       create_new_deck
-    end
-
-    def find_by_suit_or_rank(suit_or_rank)
-      @cards.select { |item| item.include?(suit_or_rank) }
     end
 
     private
