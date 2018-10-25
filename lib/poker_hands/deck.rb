@@ -1,4 +1,4 @@
-module Pokerhander
+module PokerHands
   class Deck
     attr_reader :cards
 

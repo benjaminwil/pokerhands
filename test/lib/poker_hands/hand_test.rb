@@ -1,10 +1,10 @@
 require "test_helper"
-require "pokerhander/hands"
+require "poker_hands/hand"
 
-module Pokerhander
-  class HandsTest < Minitest::Test
-    def test_hands_is_class
-      assert_equal true, Hands.is_a?(Class)
+module PokerHands
+  class HandTest < Minitest::Test
+    def test_hand_is_class
+      assert_equal true, Hand.is_a?(Class)
     end
     
     def test_royal_flush

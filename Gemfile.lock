@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pokerhander (0.1.0)
+    poker_hands (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -20,7 +20,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   minitest (~> 5.0)
-  pokerhander!
+  poker_hands!
   pry
   rake (~> 10.0)
 

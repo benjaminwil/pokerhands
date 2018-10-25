@@ -1,7 +1,7 @@
 require "test_helper"
-require "pokerhander/deck"
+require "poker_hands/deck"
 
-module Pokerhander
+module PokerHands
   class DeckTest < Minitest::Test
 
     def setup

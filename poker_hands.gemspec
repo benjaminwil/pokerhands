@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "pokerhander/version"
+require "poker_hands/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "pokerhander"
-  spec.version       = Pokerhander::VERSION
+  spec.name          = "poker_hands"
+  spec.version       = PokerHands::VERSION
   spec.authors       = ["Benjamin Willems"]
   spec.email         = ["bw@benjaminwil.info"]
 
