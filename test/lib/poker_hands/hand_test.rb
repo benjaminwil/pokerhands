@@ -7,6 +7,10 @@ module PokerHands
       assert_equal true, Hand.is_a?(Class)
     end
     
+    def test_hand_is_5_cards
+      skip "WIP"
+    end
+    
     def test_royal_flush
       skip "WIP"
     end
