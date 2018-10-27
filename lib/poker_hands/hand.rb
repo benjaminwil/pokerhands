@@ -1,3 +1,5 @@
+require "poker_hands/search_utilities"
+
 module PokerHands
 
   class IllegalHandError < StandardError; end
