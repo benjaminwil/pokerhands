@@ -6,8 +6,8 @@ module PokerHands
 
     def setup
       @deck = Deck.new
-      @ranks = ["ace", "king", "queen", "jack", 10, 9, 8, 7, 6, 5, 4, 3, 2]
-      @suits = [:clubs, :diamonds, :hearts, :spades]
+      @ranks = @deck.ranks
+      @suits = @deck.suits
     end
 
     def test_deck_is_class
