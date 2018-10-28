@@ -1,3 +1,4 @@
+require "poker_hands/hand_types"
 require "poker_hands/search_utilities"
 
 module PokerHands
@@ -5,6 +6,7 @@ module PokerHands
   class IllegalHandError < StandardError; end
 
   class Hand
+    include PokerHands::HandTypes
     include PokerHands::SearchUtilities
 
     attr_reader :cards
@@ -32,15 +34,5 @@ module PokerHands
         [deck.cards.index(card) || deck.cards.size, card]
       end
     end
-  end
-end
-
-module PokerHands
-  module Categories
-
-    def evaluate(hand)
-
-    end
-
   end
 end
