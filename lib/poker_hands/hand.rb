@@ -9,11 +9,12 @@ module PokerHands
     include PokerHands::HandTypes
     include PokerHands::SearchUtilities
 
-    attr_reader :cards
+    attr_reader :cards, :score
 
     def initialize(cards)
       sorted_cards = sort_hand_by_deck_order(cards)
       @cards = sorted_cards
+      @score = evaluate_hand
       raise IllegalHandError unless valid_hand?
       # WIP: `@cards` needs to be user input.
     end
