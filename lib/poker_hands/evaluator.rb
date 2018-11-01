@@ -1,10 +1,10 @@
 module PokerHands
-  module HandTypes
+  module Evaluator
     def evaluate_hand
       case
-      when flush? && straight? && royal?
+      when straight? && flush? && royal?
         ROYAL_FLUSH
-      when flush? && straight?
+      when straight? && flush?
         STRAIGHT_FLUSH
       when four_of_a_kind?
         FOUR_OF_A_KIND
