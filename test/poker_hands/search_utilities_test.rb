@@ -106,9 +106,5 @@ module PokerHands
       ])
       assert hand.score, ONE_PAIR
     end
-
-    def test_high_card
-      skip "WIP"
-    end
   end
 end

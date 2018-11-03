@@ -29,13 +29,5 @@ module PokerHands
         assert_equal 13, @deck.find_by_suit_or_rank(suit).count
       end
     end
-
-    def test_ace_cards_outrank_non_ace_cards
-      skip "WIP"
-    end
-
-    def test_face_cards_outrank_number_cards
-      skip "WIP"
-    end
   end
 end
