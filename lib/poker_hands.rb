@@ -1,5 +1,6 @@
 require "poker_hands/version"
 
+require "poker_hands/contest"
 require "poker_hands/deck"
 require "poker_hands/hand"
 
